@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about" class="section">
+        <div class="content">
+            <p>I am,</p>
+            <h1>Batsal<br>
+            <h2><b>Shrestha</b></h2>
+        </div>
+        <div class="rectangle"></div>
+        <div class="description">Student at Softwarica College of IT and E-Commerce</div>
+        <div class="image">
+            <img src="img/prof.png" alt="Description of the image" class="profile-image">
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <div class="skill">
+            <p>I,</p>
+            <h1>Design<br></h1>
+            <h2><b>DEVELOP</b></h2>
+        </div>
+        <div class="join"><h3>&</h3></div>
+        <div class="skill-container">
+            <div class="skill-box">
+                <h3 class="skill-title">Technical Skills</h3>
+                <div class="progress-container">
+                    <label for="tech-progress">HTML</label>
+                    <progress id="tech-progress" value="85" max="100"></progress>
+                </div>
+                <div class="progress-container">
+                    <label for="tech-progress">CSS</label>
+                    <progress id="tech-progress" value="80" max="100"></progress>
+                </div>
+                <div class="progress-container">
+                    <label for="js-progress">JavaScript</label>
+                    <progress id="js-progress" value="75" max="100"></progress>
+                </div>
+                <div class="progress-container">
+                    <label for="python-progress">Python</label>
+                    <progress id="python-progress" value="80" max="100"></progress>
+                </div>
+            </div>
+    
+            <div class="skill-box">
+                <h3 class="skill-title">Soft Skills</h3>
+                <div class="progress-container">
+                    <label for="communication-progress">Communication</label>
+                    <progress id="communication-progress" value="80" max="100"></progress>
+                </div>
+                <div class="progress-container">
+                    <label for="teamwork-progress">Teamwork</label>
+                    <progress id="teamwork-progress" value="85" max="100"></progress>
+                </div>
+                <div class="progress-container">
+                    <label for="leadership-progress">Leadership</label>
+                    <progress id="leadership-progress" value="80" max="100"></progress>
+                </div>
+                <div class="progress-container">
+                    <label for="timemanagement-progress">Time Management</label>
+                    <progress id="timemanagement-progress" value="75" max="100"></progress>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="works">
+            <h1>Projects</h1>
+        </div>
+        <div class="fullstop"></div>
+        <div class="boxes-container">
+            <div class="box" onclick="window.location.href='https://github.com/shresthabatsal/project_kitapp';">
+                <img src="img/kitapp.jpg" alt="Image 1" class="box-image">
+                <h3 class="box-title">KitAPP: Library Management System</h3>
+                <p class="box-description">KitAPP is a desktop-based library management 
+                    system application designed to facilitate efficient management of library 
+                    resources, catering to both users and administrators. It is focused for 
+                    effortlessly accessing books. It utilizes the newest technologies to elevate 
+                    user experience. With the goal of streamlining and enhancing the library 
+                    experience, our library management system shines as an efficient light in an 
+                    era of plentiful knowledge.</p>
+            </div>
+
+            <div class="box" onclick="window.location.href='https://github.com/shresthabatsal/project_todo';">
+                <img src="img/to-do.png" class="box-image">
+                <h3 class="box-title">To-Do: Productivity Application</h3>
+                <p class="box-description">“To-Do” is a desktop application designed to enhance 
+                    task management and productivity. “To-Do” provides users with a streamlined 
+                    interface to manage daily tasks, prioritize important activities, and plan 
+                    for future commitments. In today's fast-paced world, staying organized and 
+                    managing time efficiently are crucial for both personal and professional 
+                    success. “To-Do” addresses these needs by offering a user-friendly platform 
+                    that simplifies task management, enhances productivity, and reduces the 
+                    stress associated with keeping track of numerous tasks and deadlines.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="section">
+        <div class="education">
+            <h1>Ex</h1>
+            <h2>perience</h2>
+        </div>
+        <div class="timeline-container">
+            <ul class="timeline">
+                <li class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>BSc. (Hons) Computing</h3>
+                        <p>Coventry University, Softwarica College of IT and E-Commerce, 2023 - 2026</p>
+                    </div>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>A Levels</h3>
+                        <p>St.Xavier's College, Maitighar, 2021 - 2023</p>
+                    </div>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Secondary Education</h3>
+                        <p>St.Xavier's School, Jawalakhel, 2011 - 2021</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="details">
+            <h1>Contact me</h1><br><br><br>
+            <p class="email">Email: <a href="mailto:shresthabatsal247@gmail.com">shresthabatsal247@gmail.com</a></p><br>
+        </div>
+    </section>
+    
+</body>
+</html>

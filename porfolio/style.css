@@ -1,0 +1,634 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid red; */
+}
+
+body {
+    font-family: Georgia;
+    line-height: 0.5;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background: white;
+    color: black;
+    border-bottom: 1px solid black;
+    z-index: 100;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    color: black;
+    justify-content: right;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: 550;
+    justify-content: center;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #3498db;
+}
+
+section {
+    padding: 100px 10px;
+}
+
+#about {
+    background-color: #ffffff;
+    color: black;
+    background-size: cover;
+    height: 100vh;
+}
+
+.rectangle {
+    width: 520px;
+    height: 30px;
+    margin-top: -25px;
+    margin-left: 200px;
+    background-color: #3498db;
+  }
+
+#skills {
+    background-color: white;
+    color: black;
+    height: 100vh;
+    margin-top: -50px;
+    transition: background-color 0.5s ease;
+}
+
+#projects {
+    background-color: white;
+    color: black;
+    height: 100vh;
+}
+
+#experience {
+    background-color: white;
+    color: black;
+    height: 100vh;
+}
+
+#contact {
+    background-color: #3498db;
+    color: black;
+    height: 30vh;
+}
+
+.description {
+    font-family: Georgia;
+    font-size: 1.3rem;
+    font-weight: 550;
+    font-style: italic;
+    color: #515151;
+    margin-left: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.content h1 {
+    font-family: Georgia;
+    font-size: 7rem;
+    font-weight: 570;
+    font-style: italic;
+    margin-left: 200px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.content h2 {
+    font-family: Georgia;
+    font-size: 7rem;
+    margin-left: 200px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-family: Georgia;
+    margin-left: 210px;
+    font-weight: 600;
+    margin-top: 150px;
+    font-size: 2rem;
+    color: black;
+}
+
+.profile-image {
+    width: 750px;
+    height: 750px;
+    margin-top: -400px;
+    margin-left: 700px;
+}
+
+.skill p{
+    font-family: Georgia;
+    margin-left: 530px;
+    font-weight: 600;
+    margin-top: 0px;
+    font-size: 2rem;
+    color: black;
+}
+
+.skill h1{
+    font-family: Agraham;
+    font-size: 4rem;
+    font-weight: 570;
+    margin-left: 550px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.skill h2{
+    font-family: Grotesk;
+    font-style: bold;
+    font-size: 8rem;
+    margin-left: 450px;
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+
+.join h3{
+    font-family: Creattion Demo;
+    font-size: 10rem;
+    color: #3498db;
+    margin-left: 700px;
+    margin-top: -150px;
+    margin-bottom: 20px;
+}
+
+.works {
+    font-family: Georgia;
+    color: black;
+}
+
+.works h1{
+    font-family: Georgia;
+    font-size: 4rem;
+    font-weight: 700;
+    margin-left: 100px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.fullstop {
+    width: 20px;
+    height: 20px;
+    margin-top: -33px;
+    margin-left: 375px;
+    background-color: #3498db;
+}
+
+.education h1{
+    font-family: Georgia;
+    color: #3498db;
+    font-size: 4rem;
+    font-weight: 700;
+    margin-left: 100px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.education h2{
+    font-family: Georgia;
+    font-size: 4rem;
+    font-weight: 700;
+    margin-left: 185px;
+    margin-top: -53px;
+    margin-bottom: 20px;
+}
+
+.details{
+    font-family: Georgia;
+    font-size: 1rem;
+    color: white;
+    font-weight: 700;
+    margin-left: 100px;
+    margin-top: -53px;
+    margin-bottom: 20px;
+}
+
+.skill-container {
+    display: flex;
+    margin-left: 90px;
+    gap: 20px;
+    width: 90%;
+    flex-wrap: wrap;
+}
+
+.skill-box {
+    width: 630px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 90px;
+}
+
+.skill-title {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.progress-container {
+    margin-bottom: 30px;
+    text-align: left;
+    font-size: 1rem;
+}
+
+progress {
+    width: 100%;
+    height: 20px;
+    border-radius: 10px;
+    appearance: none;
+    background-color: #e0e0e0;
+    margin-top: 5px;
+}
+
+progress::-webkit-progress-bar {
+    background-color: #e0e0e0;
+    border-radius: 10px;
+}
+
+progress::-webkit-progress-value {
+    background-color: #3498db;
+    border-radius: 10px;
+}
+
+progress + span {
+    display: block;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.boxes-container {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin-left: 80px;
+    margin-top: 70px;
+}
+
+.box {
+    width: calc(40% - 10px);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.box-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.box-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.box-description {
+    font-size: 1rem;
+    color: #7f8c8d;
+    line-height: 1.5;
+}
+
+.timeline-container {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-left:80px;
+    margin-top:70px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.timeline-content h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.timeline {
+    list-style-type: none;
+    position: relative;
+    padding-left: 40px;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -20px;
+    top: 0;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #3498db;
+    border: 3px solid white;
+    z-index: 2;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 7px;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background-color: #3498db;
+    z-index: 1;
+}
+
+.timeline-content {
+    background-color: #ecf0f1;
+    padding: 40px;
+    border-radius: 8px;
+    position: relative;
+    margin-left: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-content h3 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.timeline-content p {
+    font-size: 1rem;
+    color: #7f8c8d;
+}
+
+.details p {
+    margin: 10px 0;
+    font-size: 1.1em;
+    font-weight: 100;
+}
+
+.details a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 100;
+}
+
+.details a:hover {
+    text-decoration: underline;
+    color: #d8d8d8;
+}
+
+
+@media (max-width: 768px) {
+    body {
+        font-size: 1rem;
+    }
+
+    nav {
+        height: auto;
+        flex-direction: row;
+        align-items: center;
+        padding: 10px;
+        justify-content: center;
+    }
+
+    nav ul {
+        flex-direction: row;
+        align-items: center;
+        font-size: 1rem;
+    }
+
+    nav ul li {
+        font-size: 0.6rem;
+        margin: 10px 0;
+        margin-left: 10px;
+    }
+
+    section {
+        padding: 50px 10px;
+    }
+
+    .rectangle {
+        width: 170px;
+        height: 15px;
+        margin-left: 20px;
+    }
+
+    #about {
+        height: auto;
+    }
+
+    #skills {
+        height: auto;
+    }
+
+    #projects {
+        height: auto;
+    }
+
+    #experience {
+        height: auto;
+    }
+
+    #contact {
+        height: auto;
+    }
+
+    .description {
+        margin-left: 20px;
+        margin-top: 15px;
+        font-size: 0.9rem;
+        text-align: left;
+    }
+
+    .content h1 {
+        margin-left: 20px;
+        font-size: 2.3rem;
+        font-weight: 700;
+        text-align: left;
+        margin-top: 20px;
+    }
+
+    .content h2 {
+        margin-left: 20px;
+        font-size: 2.3rem;
+        margin-top: 10px;
+        text-align: left;
+    }
+
+    .content p {
+        margin-left: 20px;
+        font-size: 1.2rem;
+        text-align: left;
+    }
+
+    .profile-image {
+        width: 68%;
+        height: auto;
+        margin-left: 130px;
+        margin-bottom: 25px;
+    }
+
+    .skill p {
+        font-size: 1.5rem;
+        margin-left: -150px;
+        margin-top: -10px;
+        text-align: center;
+    }
+
+    .skill h1 {
+        font-size: 2rem;
+        margin-left: 0;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .skill h2 {
+        font-size: 3rem;
+        margin-left: 0;
+        margin-top: 25px;
+        text-align: center;
+    }
+
+    .join h3 {
+        margin-left: 0;
+        margin-top: -70px;
+        text-align: center;
+        font-size: 4rem;
+    }
+
+    .works h1 {
+        margin-left: 20px;
+        margin-top: -30px;
+        font-size: 2rem;
+    }
+
+    .fullstop {
+        width: 10px;
+        height: 10px;
+        margin-left: 158px;
+        margin-top: -26px;
+    }
+
+    .box h3{
+        font-size: 0.9rem;
+    }
+
+    .box-description{
+        font-size: 0.8rem;
+    }
+
+    .education h1 {
+        margin-left: 20px;
+        margin-top: -55px;
+        font-size: 2rem;
+    }
+
+    .education h2 {
+        margin-left: 63px;
+        margin-top: -36px;
+        font-size: 2rem;
+    }
+
+    .details {
+        margin-left: 20px;
+    }
+
+    .skill-container {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 20px;
+        margin-top: 50px;
+    }
+
+    .skill-box {
+        width: 90%;
+        margin: 0px 0;
+    }
+
+    .boxes-container {
+        flex-direction: column;
+        margin-left: 0;
+        margin-top: 0px;
+        gap: 30px;
+    }
+
+    .skill-title{
+        font-size: 1rem;
+    }
+
+    .progress-container label{
+        font-size: 0.8rem;
+    }
+
+    .box {
+        width: 100%;
+    }
+
+    .timeline-container {
+        margin-left: 10px;
+        margin-top: 40px;
+        width: 90%;
+    }
+
+    .timeline-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .timeline-content {
+        padding: 20px;
+    }
+
+    .timeline-content h3 {
+        font-size: 1rem;
+    }
+
+    .timeline-content p {
+        font-size: 0.8rem;
+        line-height: 1.3;
+    }
+
+    .details h1{
+        margin-top: 50px;
+    }
+
+    .details p {
+        font-size: 0.9em;
+    }
+}
